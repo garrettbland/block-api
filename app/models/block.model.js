@@ -10,4 +10,4 @@ const BlockSchema = mongoose.Schema({
     timestamps: true
 });
 
-module.exports = mongoose.model('Note', BlockSchema);
+module.exports = mongoose.model('Block', BlockSchema);
