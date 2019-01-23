@@ -48,12 +48,15 @@ app.get('/', (req, res) => {
     res.json({"message": "Welcome to block builder api"});
 });
 
-// ........
+// ========= Routes =========
 
 // Require Blocks routes
 require('./app/routes/block.routes.js')(app);
 
-// ........
+// Require Preview routes
+require('./app/routes/preview.routes.js')(app);
+
+// ==========================
 
 // listen for requests
 app.listen(3000, () => {
